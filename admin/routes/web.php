@@ -8,3 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[homeController::class,'HomeIndex']);
 Route::get('/visitor',[visitorController::class,'VisitorIndex']);
 Route::get('/service',[serviceController::class,'ServiceIndex']);
+
+Route::get('/getServiceData',[serviceController::class,'ServiceData']);
+Route::post('/deleteServiceData',[serviceController::class,'ServiceDelete']);
+
